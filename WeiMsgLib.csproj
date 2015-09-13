@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F066F140-D35C-4046-B73D-108BE7F47C2A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>WeiMsgLib</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WeiMsgLib\bin\Debug\ClassLibrary.dll" />
+    <Content Include="WeiMsgLib\bin\Debug\ClassLibrary.pdb" />
+    <Content Include="WeiMsgLib\obj\Debug\ClassLibrary.dll" />
+    <Content Include="WeiMsgLib\obj\Debug\ClassLibrary.pdb" />
+    <Content Include="WeiMsgLib\obj\Debug\WeiMsgLib.csproj.FileListAbsolute.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="WeiMsgLib\Context\GlobalContext.cs" />
+    <Compile Include="WeiMsgLib\Context\IMsgContext.cs" />
+    <Compile Include="WeiMsgLib\Context\MsgContainer.cs" />
+    <Compile Include="WeiMsgLib\Context\MsgContext.cs" />
+    <Compile Include="WeiMsgLib\Context\WeixinMsgRemovedEventArgs.cs" />
+    <Compile Include="WeiMsgLib\Exceptions\UnknowRequestMsgTypeException.cs" />
+    <Compile Include="WeiMsgLib\Exceptions\WeixinException.cs" />
+    <Compile Include="WeiMsgLib\Factory\RequestMsgFactory.cs" />
+    <Compile Include="WeiMsgLib\Message\Enums.cs" />
+    <Compile Include="WeiMsgLib\Message\MsgBase.cs" />
+    <Compile Include="WeiMsgLib\Message\RequestEventMsgBase.cs" />
+    <Compile Include="WeiMsgLib\Message\RequestEventMsgs.cs" />
+    <Compile Include="WeiMsgLib\Message\RequestMsgBase.cs" />
+    <Compile Include="WeiMsgLib\Message\RequestMsgs.cs" />
+    <Compile Include="WeiMsgLib\Message\ResponseMsgBase.cs" />
+    <Compile Include="WeiMsgLib\Message\ResponseMsgs.cs" />
+    <Compile Include="WeiMsgLib\MsgHandler\IMsgHandler.cs" />
+    <Compile Include="WeiMsgLib\MsgHandler\MsgHandler.cs" />
+    <Compile Include="WeiMsgLib\Properties\AssemblyInfo.cs" />
+    <Compile Include="WeiMsgLib\Utility\DateTimeHelper.cs" />
+    <Compile Include="WeiMsgLib\Utility\EntityHelper.cs" />
+    <Compile Include="WeiMsgLib\Utility\EventHelper.cs" />
+    <Compile Include="WeiMsgLib\Utility\MsgTypeHelper.cs" />
+    <Compile Include="WeiMsgLib\Validate\CheckSignature.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WeiMsgLib\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="WeiMsgLib\obj\Debug\WeiMsgLib.csprojResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WeiMsgLib\obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

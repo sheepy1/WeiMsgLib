@@ -1,0 +1,5 @@
+C:\Users\Sheepy\Documents\Visual Studio 2013\Projects\WeiMsgLib\bin\Debug\ClassLibrary.dll
+C:\Users\Sheepy\Documents\Visual Studio 2013\Projects\WeiMsgLib\bin\Debug\ClassLibrary.pdb
+C:\Users\Sheepy\Documents\Visual Studio 2013\Projects\WeiMsgLib\obj\Debug\WeiMsgLib.csprojResolveAssemblyReference.cache
+C:\Users\Sheepy\Documents\Visual Studio 2013\Projects\WeiMsgLib\obj\Debug\ClassLibrary.dll
+C:\Users\Sheepy\Documents\Visual Studio 2013\Projects\WeiMsgLib\obj\Debug\ClassLibrary.pdb
